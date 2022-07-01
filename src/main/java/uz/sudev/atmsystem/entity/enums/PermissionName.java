@@ -1,0 +1,32 @@
+package uz.sudev.atmsystem.entity.enums;
+
+public enum PermissionName {
+    ADD_USER,
+    EDIT_USER,
+    VIEW_USERS,
+    DELETE_USER,
+    ADD_ROLE,
+    EDIT_ROLE,
+    VIEW_ROLES,
+    DELETE_ROLE,
+    ADD_ATM,
+    EDIT_ATM,
+    DELETE_ATM,
+    VIEW_ATMS,
+    ADD_BANK,
+    EDIT_BANK,
+    DELETE_BANK,
+    VIEW_BANKS,
+    ADD_CARD,
+    EDIT_CARD,
+    DELETE_CARD,
+    VIEW_CARDS,
+    ADD_CASH,
+    EDIT_CASH,
+    DELETE_CASH,
+    VIEW_CASHES,
+    ADD_CASH_BOX,
+    EDIT_CASH_BOX,
+    DELETE_CASH_BOX,
+    VIEW_CASH_BOXES
+}
