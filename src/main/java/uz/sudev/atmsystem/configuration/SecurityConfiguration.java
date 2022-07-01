@@ -53,7 +53,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().httpBasic().disable().authorizeRequests().antMatchers("/customerServices/login","/customerServices/register").permitAll().anyRequest().authenticated();
+        http.csrf().disable().httpBasic().disable().authorizeRequests().antMatchers("/customerServices/getCashFromTerminal","/customerServices/fillTerminalWithCash").permitAll().anyRequest().authenticated();
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
