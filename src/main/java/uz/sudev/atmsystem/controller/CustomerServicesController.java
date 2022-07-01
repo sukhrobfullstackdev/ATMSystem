@@ -18,11 +18,12 @@ public class CustomerServicesController {
     public CustomerServicesController(CustomerServicesService customerServicesService) {
         this.customerServicesService = customerServicesService;
     }
-
+    @Transactional
     @PostMapping(value = "/getCashFromTerminal")
     public ResponseEntity<Message> getCashFromTerminal(@RequestBody CustomerServicesDTO customerServicesDTO) {
         return customerServicesService.getCashFromTerminal(customerServicesDTO);
     }
+    @Transactional
     @PostMapping(value = "/fillTerminalWithCash")
     public ResponseEntity<Message> fillTerminalWithCash(@RequestBody CustomerServicesDTO customerServicesDTO) {
         return customerServicesService.fillTerminalWithCash(customerServicesDTO);
